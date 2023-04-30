@@ -16,11 +16,11 @@ const QuemSomos = () => {
        
         window.addEventListener("scroll",()=>{
 
-           window.scrollY > 304 && window.scrollY < 400
+           window.scrollY > 304 && window.scrollY < 699
            ?    setShow1(true)
            :    window.scrollY > 700 && window.scrollY < 1000
                 ?   setShow2(true)
-                :   window.scrollY > 1222
+                :   window.scrollY > 1222 && window.scrollY < 1293
                     ?   setShow3(true)
                     :   ""
 
@@ -33,7 +33,7 @@ const QuemSomos = () => {
     
   return (
     <section >
-        <div className={` flex justify-center`}>
+        <div className={` flex justify-center`} id='quem-somos'>
          <button className={`text-4xl text-[#2E99B2] ${fredoka.className}  mt-16 pb-3 drop-shadow-lg border-b-4  border-solid  px-8  rounded-lg`}>Quem Somos</button>
         </div>
         <div className='mt-10'>

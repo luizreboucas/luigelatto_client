@@ -4,6 +4,7 @@ import { ReactElement } from 'react'
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 import QuemSomos from '@/components/QuemSomos'
+import Produtos from '@/components/Produtos'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,6 +20,7 @@ export default function Home() :ReactElement {
         </div>
         
         <QuemSomos/>
+        <Produtos/>
       </div>
       
 
