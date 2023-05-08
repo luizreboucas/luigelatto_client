@@ -34,16 +34,16 @@ const Header = ({title, color = "#fff"}: HeaderProps) => {
       <nav className='h-full  mr-24'>
         <ul className={`flex gap-9 font-bold h-full text-xl items-center  ${fredoka.className}`}>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
-            <Link href={"#"}>home</Link>
+            <Link href={"#"} scroll={true}>home</Link>
           </li>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
-            <Link href={"#"}>quem somos</Link>
+            <Link href={"#quem-somos"}>quem somos</Link>
           </li>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
-            <Link href={"#"}>produtos</Link>
+            <Link href={"#produtos"}>produtos</Link>
           </li>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
-            <Link href={"#"}>contato</Link>
+            <Link href={"#contato"}>contato</Link>
           </li>
         </ul>
       </nav>
