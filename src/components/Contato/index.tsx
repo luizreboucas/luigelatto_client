@@ -71,7 +71,7 @@ const Contato = () => {
                         <textarea placeholder='Digite sua Mensagem (opcional)' className='h-48 border-[#2E99B2] border-solid border-4 rounded-md p-3'
                             value={contato.mensagem}
                             onChange={(e) => setContato({...contato, mensagem: e.target.value})} />
-                        <button className='p-3 sm:mb-12 md:mb-0 bg-blue-400 text-yellow-300 rounded-xl drop-shadow-lg' onClick={(e) => enviou(e)}>Enviar</button>
+                        <button className='p-3 sm:mb-12 md:mb-0 bg-blue-400 text-yellow-300 rounded-xl drop-shadow-lg mb-10' onClick={(e) => enviou(e)}>Enviar</button>
                     </form>
                 </div>
                 <div className={`flex flex-col gap-5 ${fredoka.className} text-xl w-auto  md:w-1/2 mx-3 bg-blue-400 rounded-2xl pt-2 justify-center items-start text-slate-700 drop-shadow-lg`}>

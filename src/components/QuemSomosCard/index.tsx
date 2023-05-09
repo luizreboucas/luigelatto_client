@@ -26,21 +26,21 @@ const QuemSomosCard = ({caminho,texto,show,inverse}: QuemSomosCardProps) => {
     <div>
         {!inverse
     ? (<div className={`flex justify-between items-center mx-24 `}>
-    <p className={` ${fredoka.className} ${styles.moviment}  md:w-1/2 sm:w-screen sm:mt-12 mt-6 text-2xl text-slate-600 sm:bg-blue-100 sm:p-10 rounded-lg sm:drop-shadow-lg md:p-0 md:bg-inherit ${show? "": 'opacity-0 -translate-x-1/3' }`} ref={refTexto}>{texto}</p>
-    <div className='sm:hidden md:w-1/2 md:flex items-center justify-end'>
+    <p className={` ${fredoka.className} ${styles.moviment}  md:w-1/2 w-screen mt-12 md:mt-6 text-2xl text-slate-600 bg-blue-100 p-10 rounded-lg drop-shadow-lg md:p-0 md:bg-inherit ${show? "": 'opacity-0 -translate-x-1/3' }`} ref={refTexto}>{texto}</p>
+    <div className='hidden md:w-1/2 md:flex items-center justify-end'>
     <Image
         src={caminho}
         height={0}
         width={500}
         alt='desenho de pessoas cozinhando'
-        className={` lg:${styles.moviment} sm:hidden md:block ${show? "": "opacity-0 translate-x-1/3"}`}
+        className={`${styles.moviment} hidden md:block ${show? "": "opacity-0 translate-x-1/3"}`}
         
     />
     </div>
     
 </div>):
     (<div className={`flex justify-between items-center mx-24 `}>
-    <div className='sm:hidden md:w-1/2 md:flex  items-center justify-start'>
+    <div className='hidden md:w-1/2 md:flex  items-center justify-start'>
     <Image
         src={caminho}
         height={0}
@@ -50,7 +50,7 @@ const QuemSomosCard = ({caminho,texto,show,inverse}: QuemSomosCardProps) => {
         
     />
     </div>
-    <p className={` ${fredoka.className} ${styles.moviment} md:w-1/2 sm:w-screen sm:mt-12 flex justify-end mt-6 text-2xl text-slate-600 sm:bg-yellow-100 sm:p-10 rounded-lg sm:drop-shadow-lg md:p-0 md:bg-inherit${show? "": 'opacity-0 -translate-x-1/3' }`} ref={refTexto}>{texto}</p>
+    <p className={` ${fredoka.className} ${styles.moviment} md:w-1/2 w-screen mt-12 flex justify-end mt-6 text-2xl text-slate-600 bg-yellow-100 p-10 rounded-lg drop-shadow-lg md:p-0 md:bg-inherit${show? "": 'opacity-0 -translate-x-1/3' }`} ref={refTexto}>{texto}</p>
     
     
 </div>)}
