@@ -23,7 +23,7 @@ const fredoka = Fredoka({
 
 const Header = ({title, color = "#fff"}: HeaderProps) => {
   return (
-    <header className='flex items-center justify-between drop-shadow-xl bg-yellow-200'>
+    <header className='flex items-center justify-between drop-shadow-xl bg-yellow-200 w-screen'>
       <Image 
         src="/images/logo-luigelatto.png" 
         alt={'logo luigelatto'}
@@ -32,9 +32,9 @@ const Header = ({title, color = "#fff"}: HeaderProps) => {
         className='mt-4 ml-24'
         />
       <nav className='h-full  mr-24'>
-        <ul className={`flex gap-9 font-bold h-full text-xl items-center  ${fredoka.className}`}>
+        <ul className={`flex gap-9 font-bold h-full text-xl items-center  ${fredoka.className} sm:hidden lg:flex`}>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
-            <Link href={"#"} scroll={true}>home</Link>
+            <Link href={"/"} scroll={true}>home</Link>
           </li>
           <li className='px-4 py-2 bg-[#2E99B2] text-slate-50 rounded-md drop-shadow-lg'>
             <Link href={"#quem-somos"}>quem somos</Link>

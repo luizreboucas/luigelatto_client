@@ -1,6 +1,7 @@
 import React,{ useRef, useState,useEffect } from 'react'
 import { Fredoka } from '@next/font/google'
 import ProdutosCard from './ProdutosCArd'
+import Link from 'next/link'
 
 
 
@@ -16,6 +17,7 @@ const Produtos = () => {
   const [isVisible2, setIsVisible2] = useState(false)
   const [isVisible3, setIsVisible3] = useState(false)
   const [isVisible4, setIsVisible4] = useState(false)
+  
 
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
@@ -32,9 +34,11 @@ const Produtos = () => {
 
   },[])
 
+  
+
   return (
     <section >
-        <div className={` flex justify-center `} id='quem-somos'>
+        <div className={` flex justify-center `} id='produtos'>
          <button className={`text-4xl text-[#2E99B2] ${fredoka.className}  mt-16 pb-3 drop-shadow-lg border-b-4  border-solid  px-8  rounded-lg`}>Sabores</button>
         </div>
         <div >
@@ -80,8 +84,11 @@ const Produtos = () => {
         />
         </div>
         <div className='flex justify-center mt-10'>
-          <button className='text-2xl text-slate-500 font-bold hover:cursor-pointer mb-10'>ver todos os sabores</button>
+          <button className='text-2xl text-slate-500 font-bold hover:cursor-pointer mb-10' >
+            <Link href='/produtos'>ver todos os sabores</Link> 
+            </button>
         </div>
+        
         
         
         
