@@ -27,7 +27,7 @@ const Main = () => {
                 alt='pessoas tomando sorvete'
                 height={3200}
                 width={400}
-                className='lg:block sm:hidden'
+                className='lg:block hidden'
                 
                 
             />
