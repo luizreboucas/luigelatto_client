@@ -56,7 +56,7 @@ const Contato = () => {
             <div className={` flex justify-center `} id='quem-somos'>
                 <button className={`text-4xl text-[#2E99B2] ${fredoka.className}  mt-16 pb-3 drop-shadow-lg border-b-4  border-solid  px-8  rounded-lg`}>Contato</button>
             </div>
-            <div className=' md:flex-row sm:flex sm:flex-col mt-10 mb-20 bg-yellow-200 pb-6 pt-6 rounded-xl mx-24'>
+            <div className=' md:flex-row flex flex-col mt-10 mb-20 bg-yellow-200 pb-6 pt-6 rounded-xl md:mx-24 mx-4'>
                 <div className='sm:w-auto md:w-1/2  ml-3'>
                     <form className={`flex flex-col gap-5 ${fredoka.className} text-xl mr-2`}>
                         <input placeholder='Nome' className='border-[#2E99B2] border-solid border-4 rounded-md p-3'
