@@ -13,7 +13,7 @@ const Main = () => {
  
   
   return (
-    <main className='bg-[#ffffff] pt-24 border-b-[#2E99B2]  px-24'>
+    <main className='bg-[#ffffff] pt-24 border-b-[#2E99B2]  md:px-24 px-4'>
         <div className='flex  justify-between '>
           <div className={`sm:w-screen lg:w-1/2 mt-14 ${fredoka.className}`}>
               <h4 className={` text-xl text-slate-600 `}>Conheça o</h4>
