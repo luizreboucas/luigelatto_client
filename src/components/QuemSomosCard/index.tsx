@@ -33,7 +33,7 @@ const QuemSomosCard = ({caminho,texto,show,inverse}: QuemSomosCardProps) => {
         height={0}
         width={500}
         alt='desenho de pessoas cozinhando'
-        className={`${styles.moviment} hidden md:block ${show? "": "opacity-0 translate-x-1/3"}`}
+        className={`${styles.moviment} hidden md:block ${show? "": "hidden opacity-0 translate-x-1/3"}`}
         
     />
     </div>
@@ -46,7 +46,7 @@ const QuemSomosCard = ({caminho,texto,show,inverse}: QuemSomosCardProps) => {
         height={0}
         width={500}
         alt='desenho de pessoas cozinhando'
-        className={`${styles.moviment} ${show? "": "opacity-0 translate-x-1/3"}`}
+        className={`${styles.moviment} ${show? "": " hidden opacity-0 translate-x-1/3"}`}
         
     />
     </div>
