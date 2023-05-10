@@ -21,7 +21,7 @@ const Produtos = () => {
 
   useEffect(()=>{
     window.addEventListener("scroll",()=>{
-      window.scrollY > 1715 && window.scrollY < 2008
+      window.scrollY > 1500 && window.scrollY < 2008
       ? setIsVisible1(true)
       : window.scrollY > 2100 && window.scrollY < 2400
         ? setIsVisible2(true)
@@ -58,7 +58,7 @@ const Produtos = () => {
             imagem='/images/sorvetes/pacoquita.jpg'
             corFundo = "bg-yellow-300 "
             corTexto='text-[#2e99b2]'
-            direction = "translate-x-14"
+            
             isVisible={isVisible2}
         />
         </div>
@@ -79,7 +79,7 @@ const Produtos = () => {
             imagem='/images/sorvetes/crocante.jpg'
             corFundo = "bg-yellow-300 "
             corTexto='text-[#2e99b2]'
-            direction = "translate-x-14"
+            
             isVisible={isVisible4}
         />
         </div>

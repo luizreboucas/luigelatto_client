@@ -38,7 +38,7 @@ const ProdutosCard = ({descricao,imagem,titulo,corFundo,corTexto,direction = "-t
       </div>
       
     </div>
-    <div className={`${styles.transicao} lg:hidden flex mx-4 justify-between  rounded-3xl py-10 mt-1${isVisible? "": `opacity-0 ${direction}`}`}>
+    <div className={`${styles.transicao}  lg:hidden  mx-4 justify-between  rounded-3xl py-10 mt-1 lg:${isVisible? "": `opacity-0 ${direction}`}`}>
         
       
       <Image
